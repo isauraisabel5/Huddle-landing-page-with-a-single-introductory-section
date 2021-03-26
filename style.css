@@ -1,0 +1,129 @@
+    .attribution { font-size: 11px; text-align: center; margin-top:0; }
+    .attribution a { color:  ar(--soft_magenta); }
+
+    :root {
+        --violet:hsl(257, 40%, 49%);
+        --soft_magenta: hsl(300, 69%, 71%);
+    }
+
+    body {
+        font-family: 'Poppins', 'Open Sans', sans-serif;
+        background-color: var(--violet);
+        background-image: url(./images/bg-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        min-width: 23rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+    
+    .logo {
+        padding: 2rem 2rem 4rem 0rem;
+    }
+
+    .logo img {
+        width: 75%;
+    }
+
+    .img {
+        margin: auto;
+
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .container_text {
+        color: white;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .container_text h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.6rem
+    }
+
+    .container_text p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .button {
+        padding-top: 0.8rem;
+        padding-bottom:0.8rem;
+        padding-left:4rem;
+        padding-right:4rem;
+        color: var(--violet);
+        background-color: white;
+        border-radius: 20px;
+        transition: background-color 300ms ease;
+    }
+
+    .button:hover {
+        background-color: var(--soft_magenta);
+    }
+
+    .socialmedia {
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .socialmedia i {
+        color: white;
+        margin: 0.2rem;
+        transition: color 300ms ease;
+    }
+
+    .socialmedia i:hover {
+        color: var(--soft_magenta);
+    }
+
+
+@media only screen and (min-width:65.5rem) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-position: center center;
+        width:100%;
+        margin:auto;
+    }
+
+    .logo {
+        padding:2rem;
+    }
+
+    .logo img{
+        width:15%;
+    }
+
+    .img_and_text {
+        display: flex;
+        flex: 1;
+    }
+
+    .container_text {
+        text-align: left;
+        margin-left: 5rem;
+        margin-right: 2rem;
+        width: 40rem;
+    }
+
+    .socialmedia {
+        text-align: right;
+        margin-right:3rem;
+    }
+}
